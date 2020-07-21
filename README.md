@@ -23,14 +23,12 @@ Tra cứu thông tin sinh viên SGU
 ## Cài Đặt
 
 * Chương trình chạy trên **python 3**.
-* Cần thư viện **requests**, **bs4**, **json**
+* Cần thư viện **requests**, **bs4**
 * Nếu chưa cố thư viện thì có thể tải thư viện như sau:
 ```
 python3 -m pip install requests
 
 python3 -m pip install bs4
-
-python3 -m pip install json
 ```
 
 ## Sử Dụng 
