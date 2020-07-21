@@ -13,7 +13,9 @@ Tra cứu thông tin sinh viên SGU
 ---
 
 <br>
+
 **SGUInfo** là một công cụ dùng để tra cứu thông tin sinh viên sgu.
+
 <br>
 
 ---
