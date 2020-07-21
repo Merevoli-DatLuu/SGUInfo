@@ -145,7 +145,7 @@ def timthongtin(mssv):
 		print(blue_clr + "Số điện thoại:" + reset_clr, sdt)
 		print("========================================")
 		print()
-		print(lightgreen_clr + "Time:", time.time() - start_time, reset_clr)
+		print((lightgreen_clr + "Time: %.3f s" + reset_clr)%(time.time() - start_time))
 		print()
 
 	else:
@@ -171,6 +171,8 @@ def caothongtin(start_mssv, end_mssv):
 
 	number = 1
 
+	print()
+	print(green_clr + "Đã tìm thấy", len(arr_mssv), "mssv hợp lệ." + reset_clr)
 	print()
 	print(blue_clr + "Bắt đầu quét thông tin sinh viên..." + reset_clr)
 	# Cà thông tin
@@ -261,21 +263,45 @@ def caothongtin(start_mssv, end_mssv):
 		arr_thongtin.append(thongtin)
 
 	print()
-	print(lightgreen_clr + "Time:", time.time() - start_time, reset_clr)
+	print((lightgreen_clr + "Time: %.3f s" + reset_clr)%(time.time() - start_time))
 	print()
 	print(green_clr + "Hoàn tất quét thông tin!" + reset_clr)
 
-	save_choice = input(orage_clr + "Bạn có muốn lưu thông tin đã quét?" + green_clr + " [Y]:Yes" + " | Others:No:" + reset_clr)
-
-
-	print(green_clr + "Đã lưu thông tin thành công" + reset_clr)
+	save_choice = input(orage_clr + "Bạn có muốn lưu thông tin đã quét?" + green_clr + " [Y] -> Yes" + " | Others -> No: " + reset_clr)
 
 	if save_choice == "Y" or save_choice == "y":
-		with open('datasgu.json', 'w') as outfile:
-		    json.dump(arr_thongtin, outfile)
-		print(green_clr + "Thông tin được lưu ở ./datasgu.json" + reset_clr)
-		print(green_clr + "Bạn có thể vào trang " + blue_clr + "https://json-csv.com/" + green_clr + " để convert sang file excel" + reset_clr)
-	
+		file_choice = input(orage_clr + "Bạn muốn lưu file nào? [1] -> json | [2] -> csv | [3] -> [Both] | [Other] -> [None]: " + reset_clr)
+
+		if file_choice == '1' or file_choice == '3':
+			# save to json file
+			try:
+				with open('datasgu.json', 'w') as out_json_file:
+					json.dump(arr_thongtin, out_json_file)
+				
+				print(green_clr + "Đã lưu thông tin thành công" + reset_clr)
+				print(green_clr + "Thông tin được lưu ở ./datasgu.json" + reset_clr)
+				#print(green_clr + "Bạn có thể vào trang " + blue_clr + "https://json-csv.com/" + green_clr + " để convert sang file excel" + reset_clr)
+			except IOError:
+				print(red_clr + "[I/O error] Lưu json file thất bại" + reset_clr)
+
+		if file_choice == '2' or file_choice == '3':
+			# save to csv file
+			import csv
+			csv_columns = ["Mã Số", "Họ Tên", "Giới tính", "Ngày sinh", "Nơi sinh", "Lớp", "Ngành", "Khoa", "Hệ đào tạo", "Khóa học", "Cố vấn học tập", "Số điện thoại"]
+			
+			try:
+				with open("datasgu.csv", 'w', encoding = 'utf-8-sig', newline='') as out_csv_file:
+					writer = csv.DictWriter(out_csv_file, fieldnames=csv_columns)
+					writer.writeheader()
+					for data in arr_thongtin:
+						writer.writerow(data)
+
+				print(green_clr + "Đã lưu thông tin thành công" + reset_clr)
+				print(green_clr + "Thông tin được lưu ở ./datasgu.csv" + reset_clr)
+
+			except IOError:
+				print(red_clr + "[I/O error] Lưu csv file thất bại" + reset_clr)
+		
 	print()
 
 
@@ -289,6 +315,9 @@ if __name__ == '__main__':
 			mssv = input("Nhập mssv: ")
 			timthongtin(mssv)
 		elif option == '2':
+			print()
+			print(orage_clr + "[Khuyến Cáo] Nên tìm dưới 100 mssv" + reset_clr)
+			print()
 			start_mssv = input("Tìm từ mssv: ")
 			while check_mssv(start_mssv) == False:
 				print(red_clr + "Mã số sinh viên ko tồn tại!\n" + reset_clr)
