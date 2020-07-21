@@ -4,7 +4,7 @@
 
 Tra cứu thông tin sinh viên SGU
 
-<img src="/Screenshot/Banner.png" width="40%">
+<img src="/Screenshot/Banner.png">
 
 ![Version](https://img.shields.io/badge/Version-1.0-00ffff.svg)
 
