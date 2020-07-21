@@ -11,14 +11,16 @@ Tra cứu thông tin sinh viên SGU
 </div>
 
 ---
+
 <br>
 **SGUInfo** là một công cụ dùng để tra cứu thông tin sinh viên sgu.
 <br>
+
 ---
 
 ## Cài Đặt
 
-* Chương trình chạy trên python 3.
+* Chương trình chạy trên **python 3**.
 * Cần thư viện **requests**, **bs4**, **json**
 * Nếu chưa cố thư viện thì có thể tải thư viện như sau:
 ```
