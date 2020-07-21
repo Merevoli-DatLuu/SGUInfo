@@ -4,16 +4,16 @@
 
 Tra cứu thông tin sinh viên SGU
 
-<img src="/Screenshot/Banner.png" width="50%">
+<img src="/Screenshot/Banner.png" width="40%">
 
 ![Version](https://img.shields.io/badge/Version-1.0-00ffff.svg)
 
 </div>
 
 ---
-
+<br>
 **SGUInfo** là một công cụ dùng để tra cứu thông tin sinh viên sgu.
-
+<br>
 ---
 
 ## Cài Đặt
