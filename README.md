@@ -39,3 +39,9 @@ python3 -m pip install json
 ```
 python3 sguinfo.py
 ```
+
+## Tính Năng
+
+* Tra cứu 1 sinh viên theo mssv.
+
+* Tra cứu nhiều sinh viên theo khoảng mssv.
