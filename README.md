@@ -24,7 +24,7 @@ Tra cứu thông tin sinh viên SGU
 
 * Chương trình chạy trên **python 3**.
 * Cần thư viện **requests**, **bs4**
-* Nếu chưa cố thư viện thì có thể tải thư viện như sau:
+* Nếu chưa có thư viện thì có thể tải thư viện như sau:
 ```
 python3 -m pip install requests
 
