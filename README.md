@@ -43,3 +43,5 @@ python3 sguinfo.py
 * Tra cứu 1 sinh viên theo mssv.
 
 * Tra cứu nhiều sinh viên theo khoảng mssv.
+
+* Tra cứu nhiều sinh viên theo file.
