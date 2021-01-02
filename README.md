@@ -3,6 +3,7 @@
 # SGUInfo
 
 Tra Cứu Thông Tin Sinh Viên SGU
+
 <img src="/Screenshot/Banner.png">
 
 ![Version](https://img.shields.io/badge/Version-v1.1-cyan.svg?longCache=true&style=for-the-badge)
@@ -33,6 +34,9 @@ Tra Cứu Thông Tin Sinh Viên SGU
 
 * Tra cứu thông tin nhanh (Multithreading).
 
+<br>
+<br>
+
 ## Cài Đặt
 
 &nbsp;
@@ -47,6 +51,9 @@ Tra Cứu Thông Tin Sinh Viên SGU
 python3 -m pip install -r requirements.txt
 ```
 
+<br>
+<br>
+
 ## Sử Dụng 
 
 &nbsp;
@@ -57,6 +64,9 @@ python3 main.py
 ```
 
 * Thư mục ```"SGUInfo\Test Files"``` có file để bạn thử tính năng **quét thông tin bằng file** (Lưu ý về số lượng quét khuyến cáo < 100).
+
+<br>
+<br>
 
 ## Issues
 
@@ -72,6 +82,9 @@ python3 main.py
 
 * **[:no_entry_sign: ISSUE]**: chưa change useragent và ip
 
+<br>
+<br>
+
 ## Screenshots
 
 &nbsp;
@@ -82,6 +95,9 @@ python3 main.py
 <img width = "80%" src="/Screenshot/Screen4.png">
 <img width = "80%" src="/Screenshot/Screen5.png">
 <img width = "80%" src="/Screenshot/Screen6.png">
+
+<br>
+<br>
 
 ## Contributing
 
