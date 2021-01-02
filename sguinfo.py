@@ -84,7 +84,7 @@ class sguinfo():
     def __init__(self):
         pass
 
-    def print_banner():
+    def print_banner(self):
         """
         Xuất banner -> CLI
         :return: None
@@ -97,7 +97,7 @@ class sguinfo():
         print(Fore.LIGHTGREEN_EX + "  Version: v1.1" + Fore.RESET)
         print(Fore.YELLOW + "  Author: Lưu Thành Đạt" + Fore.RESET)
 
-    def print_menu():
+    def print_menu(self):
         """
         Xuất menu -> CLI
         :return: None
@@ -113,7 +113,7 @@ class sguinfo():
         print(" ---------------------------------------")
         print()
 
-    def check_mssv(mssv):
+    def check_mssv(self, mssv):
         """
         Kiểm tra xem mssv có hợp lệ hay không
         [ISSUE]: có tỉ lệ sai ~ 1/100 (do Server trường)
@@ -339,7 +339,7 @@ class sguinfo():
                 start_mssv = str(int(start_mssv) + 1)
         return arr_mssv
 
-    def find_by_list(arr_mssv):
+    def find_by_list(self, arr_mssv):
         """
         Trả về danh sách thông tin sinh viên từ mảng mssv
         :param: arr_mssv -> list
@@ -557,7 +557,7 @@ class sguinfo():
         # Save file
         self.save_file(arr_thongtin)
 
-    def save_file(arr_thongtin):
+    def save_file(self, arr_thongtin):
         """
         Lưu danh sách thông tin sinh viên vào file
         :param: arr_thongtin -> list
