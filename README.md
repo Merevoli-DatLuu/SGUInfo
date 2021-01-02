@@ -24,8 +24,6 @@ Tra Cứu Thông Tin Sinh Viên SGU
 
 ## Tính Năng
 
-&nbsp;
-
 * Tra cứu thông tin của một sinh viên theo mssv.
 
 * Tra cứu thông tin của nhiều sinh viên theo khoảng mssv.
@@ -38,8 +36,6 @@ Tra Cứu Thông Tin Sinh Viên SGU
 <br>
 
 ## Cài Đặt
-
-&nbsp;
 
 * Chương trình chạy trên **python 3**.
 * Cần package:
@@ -56,8 +52,6 @@ python3 -m pip install -r requirements.txt
 
 ## Sử Dụng 
 
-&nbsp;
-
 * Chỉ cần chạy file `main.py` là xong.
 ```
 python3 main.py
@@ -69,8 +63,6 @@ python3 main.py
 <br>
 
 ## Issues
-
-&nbsp;
 
 * **[:warning: BUG]**: bị timeout [TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond]
 
@@ -87,8 +79,6 @@ python3 main.py
 
 ## Screenshots
 
-&nbsp;
-
 <img width = "80%" src="/Screenshot/Screen1.png">
 <img width = "80%" src="/Screenshot/Screen2.png">
 <img width = "80%" src="/Screenshot/Screen3.png">
@@ -100,8 +90,6 @@ python3 main.py
 <br>
 
 ## Contributing
-
-&nbsp;
 
 #### :tada: :tada: :tada: Mọi sự đóng góp đều được hoan nghênh!
 * Nếu bạn phát hiện lỗi hoặc gặp vấn đề kĩ thuật thì có thể giúp mình bằng cách **submit issue**.
