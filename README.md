@@ -3,6 +3,7 @@
 # SGUInfo
 
 Tra Cứu Thông Tin Sinh Viên SGU
+
 <img src="/Screenshot/Banner.png">
 
 ![Version](https://img.shields.io/badge/Version-v1.1-cyan.svg?longCache=true&style=for-the-badge)
@@ -23,8 +24,6 @@ Tra Cứu Thông Tin Sinh Viên SGU
 
 ## Tính Năng
 
-&nbsp;
-
 * Tra cứu thông tin của một sinh viên theo mssv.
 
 * Tra cứu thông tin của nhiều sinh viên theo khoảng mssv.
@@ -33,9 +32,10 @@ Tra Cứu Thông Tin Sinh Viên SGU
 
 * Tra cứu thông tin nhanh (Multithreading).
 
-## Cài Đặt
+<br>
+<br>
 
-&nbsp;
+## Cài Đặt
 
 * Chương trình chạy trên **python 3**.
 * Cần package:
@@ -47,9 +47,10 @@ Tra Cứu Thông Tin Sinh Viên SGU
 python3 -m pip install -r requirements.txt
 ```
 
-## Sử Dụng 
+<br>
+<br>
 
-&nbsp;
+## Sử Dụng 
 
 * Chỉ cần chạy file `main.py` là xong.
 ```
@@ -58,9 +59,10 @@ python3 main.py
 
 * Thư mục ```"SGUInfo\Test Files"``` có file để bạn thử tính năng **quét thông tin bằng file** (Lưu ý về số lượng quét khuyến cáo < 100).
 
-## Issues
+<br>
+<br>
 
-&nbsp;
+## Issues
 
 * **[:warning: BUG]**: bị timeout [TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond]
 
@@ -72,9 +74,10 @@ python3 main.py
 
 * **[:no_entry_sign: ISSUE]**: chưa change useragent và ip
 
-## Screenshots
+<br>
+<br>
 
-&nbsp;
+## Screenshots
 
 <img width = "80%" src="/Screenshot/Screen1.png">
 <img width = "80%" src="/Screenshot/Screen2.png">
@@ -83,9 +86,10 @@ python3 main.py
 <img width = "80%" src="/Screenshot/Screen5.png">
 <img width = "80%" src="/Screenshot/Screen6.png">
 
-## Contributing
+<br>
+<br>
 
-&nbsp;
+## Contributing
 
 #### :tada: :tada: :tada: Mọi sự đóng góp đều được hoan nghênh!
 * Nếu bạn phát hiện lỗi hoặc gặp vấn đề kĩ thuật thì có thể giúp mình bằng cách **submit issue**.
