@@ -45,6 +45,8 @@ class sguinfo():
         Hàm trả về danh sách thông tin sinh viên từ mảng mssv
     find_by_list_with_print(arr_mssv): None
         Hàm trả về danh sách thông tin sinh viên từ mảng mssv. Xuất -> CLI
+    def change_to_eng_info(info): dict
+        Chuyển key của info sang chuẩn của api.
     save_file(arr_thongtin): None
         Hàm lưu danh sách thông tin sinh viên vào file
     find_range_info(start_mssv, end_mssv): list
@@ -556,6 +558,40 @@ class sguinfo():
 
         # Save file
         self.save_file(arr_thongtin)
+
+    def change_to_eng_info(self, info):
+        """
+        Chuyển key của info sang chuẩn của api
+        :param: info -> dict
+        :return: info sau khi đổi key -> dict
+        """
+        eng_info = {
+            "Mã Số": "id",
+            "Họ Tên": "name",
+            "Giới tính": "gender",
+            "Ngày sinh": "day_of_birth",
+            "Nơi sinh": "place_of_birth",
+            "Lớp": "class",
+            "Ngành": "major",
+            "Khoa": "department",
+            "Hệ đào tạo": "training_system",
+            "Khóa học": "cohort",
+            "Cố vấn học tập": "academic_advisor",
+            "Số điện thoại": "phone",
+            "Email": "email"
+        }
+
+        for key, value in eng_info.items():
+            info[value] = info[key]
+            info.pop(key)
+
+        response_key = "response_time"
+        if response_key in info.keys():
+            response_value = info[response_key]
+            info.pop(response_key)
+            info[response_key] = response_value
+
+        return info
 
     def save_file(self, arr_thongtin):
         """
